@@ -1,7 +1,11 @@
 import TopBar from "../components/TopBar"
+import Container from "../components/Container"
 
   export default function Home() {
   return (
-      <TopBar />
+    <div>
+        <TopBar />
+        <Container />
+    </div>
   )
 }
