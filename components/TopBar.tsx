@@ -1,15 +1,13 @@
-import styles from './TopBar.module.css'
+import Link from 'next/link';
 
 function TopBar() {
   return (
-    <div className="">
-      <h1 className=" text-white font-bold bg-gradient-to-r from-red-600 to-blue-600 flex">
-        <p className="mx-5 my-5">Matias Haapala</p>
-          <p className="mx-auto mr-0 my-5">About me</p>
-          <p className="ml-5 mr-5 my-5">Info</p>
-          <p className="mr-5 my-5">Socials</p>
-      </h1>
-    </div>
+      <div className=" bg-gradient-to-r from-red-400 to-blue-400 flex">
+        <a href="/"><img className="w-20" src="/home.png"></img></a>
+        <Link className="text-black my-6 mx-14" href="/contact">  <p>Socials</p> </Link>
+        <Link className="text-black my-6" href="/projects"> <p>Projects</p> </Link>
+      </div>
+
   )
 }
 
